@@ -12,7 +12,7 @@ Na linguagem C foi criado um padrão para saber _programaticamente_ o fim de uma
 
 Se a _string_ for UTF-16, então dois _bytes_ nulos serão adicionados ao fim. Se for UTF-32, quatro. :-\)
 
-O leitor pode estar se perguntando a razão pela qual este conceito é útil ao engenheiro reverso. Bem, no caso de busca de _strings_ num binário compilado, você pode refinar a busca por sequências de _bytes_ na tabela ASCII, usando ou não uma codificação UNICODE \(já que os valores ASCII são os mesmos\) terminados com por um ou mais _nullbytes_. Por exemplo, supondo que você esteja buscado a _string_ "Erro" dentro de um programa, o primeiro passo é descobrir quais são os _bytes_ equivalentes na tabela ASCII desta _string_. Ao invés de usar a tabela, você pode usar o comando **hd** no Linux:
+O leitor pode estar se perguntando a razão pela qual este conceito é útil ao engenheiro reverso. Bem, no caso de busca de _strings_ num binário compilado, você pode refinar a busca por sequências de _bytes_ na tabela ASCII, usando ou não uma codificação UNICODE \(já que os valores ASCII são os mesmos\) terminados por um ou mais _nullbytes_. Por exemplo, supondo que você esteja buscado a _string_ "Erro" dentro de um programa, o primeiro passo é descobrir quais são os _bytes_ equivalentes na tabela ASCII desta _string_. Ao invés de usar a tabela, você pode usar o comando **hd** no Linux:
 
 ```bash
 $ echo -n Erro | hd
