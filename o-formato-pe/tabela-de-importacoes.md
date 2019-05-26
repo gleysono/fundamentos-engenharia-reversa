@@ -51,7 +51,7 @@ Ao clicar no botão "H" à direita do diretório IMPORT, vemos o conteúdo do pr
 
 Neste exemplo o valor é 0x00003078 \(lembre-se que números são armazenados em _little-endian_\). Sendo novamente um endereço relativo, então o endereço da ILT é 0x403078.
 
-Seguindo este endereço, encontramos achamos a ILT, que é um _array_ de números de 32-bits como já dissemos:
+Seguindo este endereço, encontramos a ILT, que é um _array_ de números de 32-bits como já dissemos:
 
 ![](../.gitbook/assets/ilt.png)
 
