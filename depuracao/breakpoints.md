@@ -10,7 +10,7 @@ Há várias maneiras de se colocar um *breakpoint* em um endereço utilizando o 
 
 Um segundo clique desabilita o *breakpoint*, mas não o exclui da aba **Breakpoints** (Alt+B). O terceiro clique de fato o deleta.
 
-Após colocar o *breakpoint* nesta CALL, rode o programa (F9). O que acontece? O debugger executa todas as linhas anteriores a este *breakpoint* e pára onde você pediu. Simples assim.
+Após colocar o *breakpoint* nesta CALL, rode o programa (F9). O que acontece? O debugger executa todas as linhas anteriores a este *breakpoint* e para onde você pediu. Simples assim.
 
 ## Como *breakpoints* são implementados
 
